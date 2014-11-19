@@ -1,0 +1,5 @@
+ERRORS	Server Customer#
+Could not find Account with the Oracle_Customer_Number__c of '5594495'.	5594495
+Could not find Account with the Oracle_Customer_Number__c of '5583777'.	5583777
+Could not find Account with the Oracle_Customer_Number__c of '5585288'.	5585288
+ERROR: A valid two-letter US State Code is required on the account address. For a list of valid codes, please go to: https://c.na0.content.force.com/servlet/servlet.FileDownload?file=01500000000Z6Xo	5597091
