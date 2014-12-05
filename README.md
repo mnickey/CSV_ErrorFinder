@@ -9,5 +9,6 @@ Execution:
 <li>    File = "MarkMultiple_Current Accounts _12_03_2014-20_59_42_error" + ".csv"</li>
 <li>Type in 'python ErrorParser.py'</li>
 </ul>
-Tasks to complete:
-Finish with ArgParse module so editing the script isn't needed for each different file.
+<ul>
+<li><b>Tasks to complete:</b></li>
+<li>Finish with ArgParse module so editing the script isn't needed for each different file.</li>
