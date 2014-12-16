@@ -45,18 +45,25 @@ def csv_dict_reader(file_obj):
         else:
             unknown_errors_found += 1
 
-    print "Error Count Total: {}".format(multiple_count + id_not_specified_count + unfound_account + invalid_email_count + data_value_too_large + state_code + unknown_errors_found)
+    print "\nError Count Total: {}".format(multiple_count + id_not_specified_count + unfound_account + invalid_email_count + data_value_too_large + state_code + unknown_errors_found)
     print "\tMultiple Accounts Count: {0}\n\tUnspecified ID: {1}\n\tUnfound Account: {2}\n\tInvalid Email: {3}\n\tData Value Too Large: {4}\n\tState Codes: {5}\n\t---------- \n\tUnknown Errors Found: {6}".format(
         multiple_count, id_not_specified_count, unfound_account, invalid_email_count, data_value_too_large, state_code, unknown_errors_found )
     return
 #---------------
 def main():
-    parser = make_parser()
-    args = parser.parse_args()
+    # parser = make_parser()
+    # args = parser.parse_args()
     # args = vars(args)
-    path = "output.csv"
-    with open(args["filename"]) as f_obj:
-        csv_dict_reader(f_obj)
+    # path = "output.csv"
+    try:
+        File = sys.argv[1]
+        with open(File) as f_obj:
+            csv_dict_reader(f_obj)
+    except IOError: print "\n"; pp("No File Name Given")
+    except IndexError: print "\n"; pp("No File Name Given")
+    finally:
+        print "\n", 
+        pp("Exiting...")
     return
 #---------------
 if __name__ == '__main__':
