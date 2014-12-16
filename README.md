@@ -11,4 +11,7 @@ Execution:
 </ul>
 <ul>
 <li><b>Tasks to complete:</b></li>
-<li>Finish with ArgParse module so editing the script isn't needed for each different file.</li>
+<li>Update with ArgParse module so editing the script isn't needed for each different file.</li>
+<br><br>
+<li>Usage: python ErrorParser.py <filename_goes_here></li>
+
