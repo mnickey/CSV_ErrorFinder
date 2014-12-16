@@ -2,7 +2,6 @@ CSV_ErrorFinder
 ===============
 
 A very simple CSV reader with a basic structure.
-Execution:
 <ul>
 <li>Open the file in the directory of the CSV.</li>
 <li>Edit the scripts main function to add the name of the file to parse.</li>
